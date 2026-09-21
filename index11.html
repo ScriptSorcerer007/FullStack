@@ -1,0 +1,44 @@
+<!--
+
+                            Online HTML Compiler.
+                Code, Compile, Run and Debug HTML program online.
+Write your code in this editor and press "Run" button to execute it.
+
+Expermiment-10: Write a JavaScript code to study the properties of the History object.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Object Study</title>
+</head>
+<body>
+
+    <h1>Check the browser's History Object</h1>
+
+    <script>
+        // Accessing the History object
+        console.log('History Object:', history);
+
+        // Displaying properties of the History object
+        console.log('History length:', history.length); // Number of entries in history
+        console.log('Current URL:', window.location.href); // Current page URL
+
+        // Exploring some of the methods
+        console.log('Can Go Back:', history.state === null ? 'No active history state' : 'Active state available');
+        console.log('Go to previous page:', 'history.back()'); // Equivalent to pressing the back button
+        console.log('Go forward in history:', 'history.forward()'); // Equivalent to pressing the forward button
+
+        // Navigate to a different page (for testing purposes)
+        // history.pushState({page: "newPage"}, "new page", "newPage.html");
+        // This will modify the browser's history without reloading the page.
+
+        // Another method: history.replaceState (to replace current state without adding a new one)
+        // history.replaceState({page: "replacedPage"}, "replaced page", "replacedPage.html");
+    </script>
+
+</body>
+</html>

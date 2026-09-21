@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Magazine Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        h1 {
+            margin: 0 0 30px 0;
+            font-family: Georgia, serif;
+            font-size: clamp(24px, 3vw, 36px);
+        }
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
+        }
+        .header {
+            width: 100%;
+            min-height: 80px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .header h2 {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-size: clamp(24px, 3vw, 32px);
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-auto-rows: 145px;
+            gap: 10px;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-family: Georgia, serif;
+            font-size: 18px;
+            padding: 20px;
+            text-align: center;
+        }
+        .featured {
+            background-color: #cabb99;
+            grid-column: span 2;
+            grid-row: span 2;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .article1,
+        .article2 {
+            background-color: #806969;
+        }
+        .article3,
+        .article4,
+        .article5 {
+            background-color: #548b54;
+        }
+        @media (max-width: 1023px) {
+            .dashboard {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 160px;
+            } 
+            .featured {
+                grid-column: 1 / -1;
+                grid-row: span 2;
+            }
+            .article1,
+            .article2,
+            .article3,
+            .article4,
+            .article5 {
+                grid-column: auto;
+                grid-row: auto;
+            }
+        }
+        @media (max-width: 767px) and  (xmin-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                margin-bottom: 20px;
+            }
+            .header {
+                min-height: 70px;
+            }
+            .dashboard {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 140px;
+                gap: 10px;
+            }
+            .featured {
+                grid-column: auto;
+                grid-row: auto;
+                min-height: 220px;
+                font-size: 22px;
+            }
+            .article1,
+            .article2,
+            .article3,
+            .article4,
+            .article5 {
+                grid-column: auto;
+                grid-row: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Task 4:-- Responsive Design</h1>
+    <div class="container">
+        <div class="header">
+            <h2>MAGAZINE</h2>
+        </div>
+        <div class="dashboard">
+            <div class="box featured">
+                Featured News
+            </div>
+            <div class="box article1">
+                Article 1
+            </div>
+            <div class="box article2">
+                Article 2
+            </div>
+            <div class="box article3">
+                Article 3
+            </div>
+            <div class="box article4">
+                Article 4
+            </div>
+            <div class="box article5">
+                Article 5
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Card</h1>
+  <div class="container">
+    <div class="card" style="background-color: red;">Card Content</div>
+    <div class="card" style="background-color: blue;">Card Content</div>
+    <div class="card" style="background-color: green;">Card Content</div>
+    <div class="card" style="background-color: yellow;">Card Content</div>
+    <div class="card" style="background-color: violet;">Card Content</div>
+  </div>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 3%;
+      height: 100px;
+      justify-content: center;
+      background-color: #f0f0f0;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    .card {
+      height: 100px;
+      min-width: 100px;
+      max-width: 500px;
+      margin: 3%;
+    }
+  </style>
+</body>
+</html>

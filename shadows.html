@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Card</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: yellow;
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+        .login-card {
+            width: 350px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-card h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .input-box {
+            margin-bottom: 20px;
+        }
+
+        .input-box label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            font-size: 15px;
+            font-style: italic;
+        }
+
+        .input-box input:focus {
+            outline: solid 5px rgb(17, 17, 17);
+            border-color: rgb(0, 0, 0);
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .login-btn:hover {
+            background-color: rgb(114, 241, 9);
+        }
+
+        .forgot {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .forgot a {
+            text-decoration: none;
+            color: rgb(247, 12, 82);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="Product cards">
+
+        <h2></h2>
+
+        <div class="input-box">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="input-box">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password">
+        </div>
+
+        <button class="login-btn">Login</button>
+
+        <div class="forgot">
+            <a href="#">Forgot Password?</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

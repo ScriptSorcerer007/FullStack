@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Fixed */
+        .fixed {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+        /* Sticky */
+        .sticky {
+            position: sticky;
+            top: 0;
+            background: yellow;
+        }
+        /* Absolute */
+        .box {
+            position: relative;
+            height: 50px;
+            background: lightgray;
+        }
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        /* Just to make the page scroll */
+        .space {
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="fixed">Fixed</h1>
+    <h1 class="sticky">Sticky</h1>
+    <p>Scroll the page and see what happens to this heading.</p>
+    <div class="box">
+        <h1 class="absolute">Absolute</h1>
+        <p>This is the parent container.</p>
+    </div>
+    <div class="space">
+        <p>Keep scrolling...</p>
+    </div>
+</body>
+</html>
